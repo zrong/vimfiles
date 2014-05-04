@@ -1,0 +1,6 @@
+vim73
+vimfiles*_old
+vimfiles/bundle/
+vimfiles/.*
+_viminfo
+*.swp
