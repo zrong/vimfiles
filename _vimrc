@@ -9,10 +9,11 @@ Plugin 'L9'
 call vundle#end()
 filetype plugin indent on
 
-"source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-"source $VIM/zrong.vim
-"behave mswin
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+source $VIM/vimfiles/config/zrong.vim
 
 set diffexpr=MyDiff()
 function MyDiff()

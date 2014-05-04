@@ -35,7 +35,6 @@ autocmd! Filetype *
 endif
 
 command! -narg=1 Findinfiles vimgrep /<args>/ *.lua
-execute pathogen#infect()
 
 " Get all of files in the current directory
 function! GetFileList(...)
