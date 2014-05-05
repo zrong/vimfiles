@@ -6,6 +6,7 @@ let path='$VIM/vimfiles/bundle'
 call vundle#begin(path)
 Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
+" Plugin 'yianwillis/vimcdoc', {'pinned': 1}
 call vundle#end()
 filetype plugin indent on
 
