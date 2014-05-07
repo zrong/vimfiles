@@ -12,6 +12,7 @@ set showmatch
 set number
 set tabstop=4
 set shiftwidth=4
+set noexpandtab
 set diffopt=filler,vertical
 "set splitright 
 "set splitbelow
@@ -23,8 +24,6 @@ set cindent
 set sessionoptions+=unix,slash
 set formatoptions+=mMor
 
-set path+=d:/cocos2dx/quick/framework/**,d:/cocos2dx/quick/lib/cocos2d-x/**,d:/cocos2dx/quick/lib/luabinding/**
-
 imap <A-/> <C-P>
 
 if has("autocmd") && exists("+omnifunc")
@@ -33,8 +32,6 @@ autocmd! Filetype *
 		\		setlocal omnifunc=syntaxcomplete#Complete |
 		\	endif
 endif
-
-command! -narg=1 Findinfiles vimgrep /<args>/ *.lua
 
 " Get all of files in the current directory
 function! GetFileList(...)
@@ -75,4 +72,29 @@ function! BaddList(...)
 	for afile in baddList
 		execute 'badd '.afile
 	endfor
+endfunction
+
+set diffexpr=MyDiff()
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let eq = ''
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      let cmd = '""' . $VIMRUNTIME . '\diff"'
+      let eq = '"'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
