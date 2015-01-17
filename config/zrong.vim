@@ -1,4 +1,4 @@
-colorscheme evening
+colorscheme desert
 set guioptions=egmrLt
 set guifont=Yahei_Consolas_Hybrid:h11
 set listchars=tab:>-,trail:-,eol:$
