@@ -1,17 +1,20 @@
 set nocompatible
 filetype off
-set runtimepath+=$HOME/vimfiles/bundle/Vundle.vim/
 
-let path='$HOME/vimfiles/bundle'
-call vundle#begin(path)
+set runtimepath+=$HOME/vimfiles/bundle/Vundle.vim/
+call vundle#begin('$HOME/vimfiles/bundle')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
-Plugin 'yianwillis/vimcdoc', {'pinned': 1}
+Plugin 'zrong/vimcdoc'
 call vundle#end()
+
 filetype plugin indent on
 
 source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
-behave mswin
+
+if has('win32')
+	source $VIMRUNTIME/mswin.vim
+	behave mswin
+endif
 
 source $HOME/vimfiles/config/zrong.vim

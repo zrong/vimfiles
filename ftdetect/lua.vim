@@ -1,3 +1,4 @@
 autocmd BufRead,BufNewFile *.lua
-	\ set noexpandtab
-	\| set path+=d:/cocos2dx/quick/framework/**,d:/cocos2dx/quick/lib/cocos2d-x/**,d:/cocos2dx/quick/lib/luabinding/**
+	\ set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+	\ | set textwidth=80
+	\ | set path+=$storage/zrong/lua/lib/**
