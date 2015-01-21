@@ -27,3 +27,12 @@ On Windows, for cygwin or mingw, you need make a symbol link use mklink:
 Else, make a symbol link use ln:
 
 	ln -s $HOME/vimfiles/vimrc $HOME/.vimrc
+
+# Install Vundle.vim
+
+1. clone Vundle.vim : `git clone git://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+2. Launch vim and run `:PluginInstall`
+
+Your can visit [Vundle.vim' README](https://github.com/gmarik/Vundle.vim).
+
+# Enjoy it!
