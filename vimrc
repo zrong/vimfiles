@@ -6,6 +6,7 @@ call vundle#begin('$HOME/vimfiles/bundle')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
 Plugin 'zrong/vimcdoc'
+Plugin 'vimwiki/vimwiki'
 call vundle#end()
 
 filetype plugin indent on
