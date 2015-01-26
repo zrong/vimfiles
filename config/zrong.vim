@@ -1,5 +1,4 @@
 colorscheme desert
-set guioptions=egmrLt
 set listchars=tab:>-,trail:-,eol:$
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin1
@@ -25,10 +24,13 @@ set formatoptions+=mMor
 set noundofile
 set nobackup
 
-if has('win32')
-	set guifont=Yahei_Consolas_Hybrid:h11
-elseif has('mac')
-	set guifont=Menlo:h16,Courier:h16
+if has('gui')
+	set guioptions=egmrLt
+	if has('win32')
+		set guifont=Yahei_Consolas_Hybrid:h11
+	elseif has('mac')
+		set guifont=Menlo:h16,Courier:h16
+	endif
 endif
 
 imap <A-/> <C-P>
@@ -81,7 +83,7 @@ function! BaddList(...)
 	endfor
 endfunction
 
-set diffexpr=MyDiff()
+" set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
