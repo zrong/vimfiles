@@ -30,15 +30,15 @@ Else, make a symbol link use ln:
 
 # Install Vundle.vim
 
-1. Make bundle directory:
+1\. Make bundle directory :
 
 	mkdir ~/vimfiles/bundle
 
-2. Clone Vundle.vim : 
+2\. Clone Vundle.vim : 
 
 	git clone git://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
 
-3. Launch vim and run :
+3\. Launch vim and run :
 
 	:PluginInstall
 
