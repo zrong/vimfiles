@@ -11,11 +11,24 @@ call vundle#end()
 
 filetype plugin indent on
 
-source $VIMRUNTIME/vimrc_example.vim
+" source $VIMRUNTIME/vimrc_example.vim
 
 if has('win32')
 	source $VIMRUNTIME/mswin.vim
-	behave mswin
 endif
 
-source $HOME/vimfiles/config/zrong.vim
+colorscheme desert
+
+source $HOME/vimfiles/config/option.vim
+source $HOME/vimfiles/config/font.vim
+source $HOME/vimfiles/config/function.vim
+
+imap <A-/> <C-P>
+
+if has("autocmd") && exists("+omnifunc")
+autocmd! Filetype *
+		\	if &omnifunc == "" |
+		\		setlocal omnifunc=syntaxcomplete#Complete |
+		\	endif
+endif
+
