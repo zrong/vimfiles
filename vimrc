@@ -7,6 +7,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
 Plugin 'zrong/vimcdoc'
 Plugin 'vimwiki/vimwiki'
+Plugin 'mattn/emmet-vim'
 call vundle#end()
 
 filetype plugin indent on
