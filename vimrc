@@ -17,6 +17,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/vim-statline'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'kien/ctrlp.vim'
+Plugin 'davidhalter/jedi-vim'
 
 " Garbled in chinese, need patch the font.
 " Plugin 'powerline/powerline', {'rtp':'powerline/bindings/vim/'}
