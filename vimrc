@@ -17,7 +17,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/vim-statline'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'kien/ctrlp.vim'
-Plugin 'davidhalter/jedi-vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'easymotion/vim-easymotion'
+
+" toooooo slowly
+" Plugin 'davidhalter/jedi-vim'
 
 " Garbled in chinese, need patch the font.
 " Plugin 'powerline/powerline', {'rtp':'powerline/bindings/vim/'}
