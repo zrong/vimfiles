@@ -44,3 +44,11 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " EasyMotion
 """"""""""""""""""""""""""""""
 let g:EasyMotion_leader_key='<Space>'
+
+
+""""""""""""""""""""""""""""""
+" wmgraphviz
+""""""""""""""""""""""""""""""
+"let g:WMGraphviz_dot=/usr/local/bin/dot
+let g:WMGraphviz_output="png"
+let maplocalleader=","

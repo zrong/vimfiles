@@ -19,6 +19,7 @@ Plugin 'dkprice/vim-easygrep'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'wannesm/wmgraphviz.vim'
 
 " toooooo slowly
 " Plugin 'davidhalter/jedi-vim'
