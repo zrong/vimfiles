@@ -32,11 +32,11 @@ Else, make a symbol link use ln:
 
 1\. Make bundle directory :
 
-	mkdir ~/vimfiles/bundle
+	mkdir $HOME/vimfiles/bundle
 
 2\. Clone Vundle.vim : 
 
-	git clone git://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
+	git clone git://github.com/gmarik/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim
 
 3\. Launch vim and run :
 
