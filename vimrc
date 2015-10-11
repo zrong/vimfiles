@@ -6,7 +6,7 @@ call vundle#begin('$HOME/vimfiles/bundle')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
 Plugin 'zrong/fencview.vim'
-Plugin 'zrong/vimcdoc'
+Plugin 'asins/vimcdoc'
 Plugin 'vimwiki/vimwiki'
 Plugin 'mattn/emmet-vim'
 Plugin 'jlanzarotta/bufexplorer'
@@ -32,9 +32,9 @@ filetype plugin indent on
 
 " source $VIMRUNTIME/vimrc_example.vim
 
-if has('win32')
-	source $VIMRUNTIME/mswin.vim
-endif
+" if has('win32')
+" 	source $VIMRUNTIME/mswin.vim
+" endif
 
 colorscheme desert
 
@@ -42,6 +42,8 @@ source $HOME/vimfiles/config/option.vim
 source $HOME/vimfiles/config/font.vim
 source $HOME/vimfiles/config/function.vim
 source $HOME/vimfiles/config/plugin_option.vim
+
+cd $HOME
 
 if has("autocmd") && exists("+omnifunc")
 autocmd! Filetype *
