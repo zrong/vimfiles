@@ -49,6 +49,8 @@ let g:EasyMotion_leader_key='<Space>'
 """"""""""""""""""""""""""""""
 " wmgraphviz
 """"""""""""""""""""""""""""""
-"let g:WMGraphviz_dot=/usr/local/bin/dot
 let g:WMGraphviz_output="png"
 let maplocalleader=","
+if has('win32')
+	let g:WMGraphviz_shelloptions="-Nfontname=SimSun -Gfontname=SimSun -Efontname=Simsun"
+endif

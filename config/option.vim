@@ -24,3 +24,6 @@ set sessionoptions+=unix,slash
 set formatoptions+=mMor
 set noundofile
 set nobackup
+set backspace=indent,eol,start
+set ruler
+

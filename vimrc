@@ -29,14 +29,12 @@ Plugin 'wannesm/wmgraphviz.vim'
 call vundle#end()
 
 filetype plugin indent on
-
-" source $VIMRUNTIME/vimrc_example.vim
-
-" if has('win32')
-" 	source $VIMRUNTIME/mswin.vim
-" endif
-
 colorscheme desert
+
+source $VIMRUNTIME/vimrc_example.vim
+if has('win32')
+	source $VIMRUNTIME/mswin.vim
+endif
 
 source $HOME/vimfiles/config/option.vim
 source $HOME/vimfiles/config/font.vim
