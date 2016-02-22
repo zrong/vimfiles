@@ -1,2 +1,2 @@
-autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,README.md  
-	\ |set textwidth=0
+autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  
+    \ | set textwidth=0

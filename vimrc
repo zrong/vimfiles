@@ -33,7 +33,7 @@ colorscheme desert
 
 source $VIMRUNTIME/vimrc_example.vim
 if has('win32')
-	source $VIMRUNTIME/mswin.vim
+    source $VIMRUNTIME/mswin.vim
 endif
 
 source $HOME/vimfiles/config/option.vim
@@ -45,8 +45,8 @@ cd $HOME
 
 if has("autocmd") && exists("+omnifunc")
 autocmd! Filetype *
-		\	if &omnifunc == "" |
-		\		setlocal omnifunc=syntaxcomplete#Complete |
-		\	endif
+        \   if &omnifunc == "" |
+        \       setlocal omnifunc=syntaxcomplete#Complete |
+        \   endif
 endif
 
