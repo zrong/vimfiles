@@ -23,7 +23,9 @@ nnoremap <silent> <s-F5> :NERDTreeFocus<CR>
 """"""""""""""""""""""""""""""
 " EasyGrep
 """"""""""""""""""""""""""""""
-"let g:EasyGrepRoot = "search:.git,.svn"
+" Track the current extension
+let g:EasyGrepMode = 2
+let g:EasyGrepRoot = "repository"
 let g:EasyGrepWindowPosition = "botright"
 "let g:EasyGrepFilesToExclude = ".svn,.git"
 let mapleader = ","

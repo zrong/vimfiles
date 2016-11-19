@@ -11,7 +11,6 @@ set showmatch
 set number
 set tabstop=4
 set shiftwidth=4
-set noexpandtab
 set diffopt=filler,vertical
 "set splitright 
 "set splitbelow
@@ -23,7 +22,6 @@ set cindent
 set sessionoptions+=unix,slash
 set formatoptions+=mMor
 set noundofile
-set nobackup
 set backspace=indent,eol,start
 set ruler
 set expandtab
