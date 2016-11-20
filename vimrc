@@ -5,27 +5,46 @@ set runtimepath+=$HOME/vimfiles/bundle/Vundle.vim/
 call vundle#begin('$HOME/vimfiles/bundle')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
+Plugin 'vim-scripts/a.vim'
 Plugin 'zrong/fencview.vim'
 Plugin 'asins/vimcdoc'
-Plugin 'vimwiki/vimwiki'
-Plugin 'mattn/emmet-vim'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'majutsushi/tagbar'
-Plugin 'vim-scripts/a.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/vim-statline'
-Plugin 'dkprice/vim-easygrep'
-Plugin 'ctrlpvim/ctrlp.vim'
+
+" Program language support
 Plugin 'leafgarland/typescript-vim'
-Plugin 'easymotion/vim-easymotion'
+
+" File Tool
 Plugin 'wannesm/wmgraphviz.vim'
 
+" Search
+Plugin 'dkprice/vim-easygrep'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'easymotion/vim-easymotion'
+
+" IDE Tools
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+
+" Editor
+Plugin 'vimwiki/vimwiki'
+Plugin 'mattn/emmet-vim'
+
+" Coding
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Raimondi/delimitMate'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'nvie/vim-flake8'
+
+" ==================== No use start
 " toooooo slowly
 " Plugin 'davidhalter/jedi-vim'
 
 " Garbled in chinese, need patch the font.
 " Plugin 'powerline/powerline', {'rtp':'powerline/bindings/vim/'}
+" ==================== No use end
+
 call vundle#end()
 
 filetype plugin indent on
