@@ -30,12 +30,24 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vimwiki/vimwiki'
 Plugin 'mattn/emmet-vim'
 
-" Coding
+" Coding common
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-scripts/loremipsum'
+
+" Coding Python
 Plugin 'nvie/vim-flake8'
+
+" Coding Web Front
+Plugin 'pangloss/vim-javascript'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'groenewege/vim-less'
+Plugin 'marijnh/tern_for_vim'
+
+
 
 " ==================== No use start
 " toooooo slowly
