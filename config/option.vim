@@ -25,8 +25,3 @@ set noundofile
 set backspace=indent,eol,start
 set ruler
 set expandtab
-
-
-if has('gui_macvim')
-    set clipboard=unnamed
-endif

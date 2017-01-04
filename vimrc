@@ -46,6 +46,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'elzr/vim-json'
 
 
 

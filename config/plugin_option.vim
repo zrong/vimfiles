@@ -17,7 +17,7 @@ nnoremap <silent> <F9> :TagbarToggle<CR>
 " NERDTree
 """"""""""""""""""""""""""""""
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
-nnoremap <silent> <C-F5> :NERDTreeFind<CR>
+nnoremap <silent> <c-F5> :NERDTreeFind<CR>
 nnoremap <silent> <s-F5> :NERDTreeFocus<CR>
 
 """"""""""""""""""""""""""""""
