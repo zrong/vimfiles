@@ -25,3 +25,4 @@ set noundofile
 set backspace=indent,eol,start
 set ruler
 set expandtab
+"let &titlestring='%F'

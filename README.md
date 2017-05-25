@@ -9,9 +9,9 @@ On Linux and Mac OS X, you needn't do everything.
 
 On Windows, you MUST set HOME enviroment to you home path, following is some samples:
 
-- c:/Users/zrong  
+- `c:\Users\zrong`  
 Only use gvim in windows.
-- c:/cygwin/home/zrong
+- `c:\cygwin\home\zrong`  
 If you use the cygwin too.
 
 # clone repostory
@@ -26,7 +26,7 @@ On Windows, for cygwin or mingw, you need make a symbol link use mklink:
 
 Else, make a symbol link use ln:
 
-	ln -s $HOME/vimfiles/vimrc $HOME/.vimrc
+	ln -s $HOME/vimfiles $HOME/.vim
 
 # Install Vundle.vim
 
