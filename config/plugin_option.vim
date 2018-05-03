@@ -27,6 +27,8 @@ nnoremap <silent> <s-F5> :NERDTreeFocus<CR>
 let g:EasyGrepMode = 2
 let g:EasyGrepRoot = "repository"
 let g:EasyGrepWindowPosition = "botright"
+" Use system grep
+let g:EasyGrepCommand = 1
 "let g:EasyGrepFilesToExclude = ".svn,.git"
 let mapleader = ","
 

@@ -2,6 +2,8 @@ set nocompatible
 filetype off
 
 set runtimepath+=$HOME/vimfiles/bundle/Vundle.vim/
+let $PYTHONHOME="/usr/local/Cellar/python3/3.6.1/Frameworks/Python.framework/Versions/3.6"
+let $PYTHONPATH="/usr/local/Cellar/python3/3.6.1/Frameworks/Python.framework/Versions/3.6/bin"
 call vundle#begin('$HOME/vimfiles/bundle')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
@@ -33,7 +35,7 @@ Plugin 'mattn/emmet-vim'
 " Coding common
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-scripts/loremipsum'
