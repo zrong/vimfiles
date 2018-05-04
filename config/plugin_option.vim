@@ -8,17 +8,13 @@ let g:bufExplorerShowRelativePath=1
 let g:bufExplorerShowTabBuffer=0
 nnoremap <silent> <F11> :BufExplorer<CR>
 
-""""""""""""""""""""""""""""""
-" tagbar
-""""""""""""""""""""""""""""""
-nnoremap <silent> <F9> :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""
 " NERDTree
 """"""""""""""""""""""""""""""
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
-nnoremap <silent> <c-F5> :NERDTreeFind<CR>
-nnoremap <silent> <s-F5> :NERDTreeFocus<CR>
+nnoremap <silent> <C-F5> :NERDTreeFind<CR>
+nnoremap <silent> <D-F5> :NERDTreeFocus<CR>
 
 """"""""""""""""""""""""""""""
 " EasyGrep
@@ -34,15 +30,20 @@ let mapleader = ","
 
 
 """"""""""""""""""""""""""""""
-" ctrlP
+" depolete
 """"""""""""""""""""""""""""""
-let g:ctrlp_map = ',,'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
-"let g:ctrlp_custom_ignore = {
-"  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-"  \ 'file': '\v\.(exe|so|dll)$'
-"  \ }
+let g:deoplete#enable_at_startup = 1
+if has('pythonx')
+    set pyxversion=3
+else
+    set pyxversion=2
+endif
+
+""""""""""""""""""""""""""""""
+" denite
+""""""""""""""""""""""""""""""
+nnoremap <silent> <F3> :Denite file<CR>
+
 
 """"""""""""""""""""""""""""""
 " EasyMotion
