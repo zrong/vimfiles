@@ -26,3 +26,9 @@ set backspace=indent,eol,start
 set ruler
 set expandtab
 "let &titlestring='%F'
+set wildignore+=*.pyc,*.git,node_modules,__pycache__,*.pyenv,venv
+
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --no-heading\ -S
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif

@@ -4,7 +4,8 @@ if has('gui_running')
 	if has('win32')
 		set guifont=Yahei_Consolas_Hybrid:h11:cDEFAULT
 	elseif has('mac')
-		set guifont=Menlo:h16,Courier:h16
+    set guifont=Monaco_for_Powerline:h14,Courier:h14
+    "set guifont=Monaco:h14,Courier:h14
 	elseif has('unix')
 		set guifont=Yahei\ Mono\ 11,DejaVu\ Sans\ Mono\ 11
 	endif
