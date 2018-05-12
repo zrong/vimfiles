@@ -6,12 +6,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Basement requirements
-Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 Plug 'Shougo/deoplete.nvim'
+Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'Shougo/denite.nvim'
-Plug 'wokalski/autocomplete-flow', {'do': 'npm install -g flow-bin'}
+"Plug 'wokalski/autocomplete-flow', {'do': 'npm install -g flow-bin'}
 
 " Search
 Plug 'dkprice/vim-easygrep'

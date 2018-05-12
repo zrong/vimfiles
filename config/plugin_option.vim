@@ -38,7 +38,7 @@ nnoremap <silent> <Leader>e :Denite grep<CR>
 call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
       \ [ '*~', '*.o', '*.exe', '*.bak',
       \ '.DS_Store', '*.pyc', '*.sw[po]', '*.class',
-      \ '.hg/', '.git/', '.bzr/', '.svn/',
+      \ '.ctool/', '.git/', '.bzr/', '.svn/', 'build-*/', '__pycache__/', 'local/',
       \ '.pyenv/', 'venv/', 'node_modules/', 'bower_components/', 'tmp/', 'log/', 'vendor/ruby',
       \ '.idea/', 'dist/',
       \ 'tags', 'tags-*'])
